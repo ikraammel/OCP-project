@@ -1,0 +1,65 @@
+.toggle-password-btn {
+  position: absolute;
+  right: 10px;
+  top: 70%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 22px;
+}
+/* Conteneur global */
+.login-page {
+  background: #f8f9fa; /* fond léger */
+  padding: 20px;
+}
+
+/* Formulaire de login */
+.login-form {
+  background: #fff;
+  max-width: 400px; /* limite largeur max */
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Bouton mot de passe (œil) */
+.toggle-password-btn {
+  position: absolute;
+  right: 10px;
+  top: 70%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #333;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+/* Bouton custom (tu peux changer la couleur principale ici) */
+.btn-custom {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #0056b3;
+}
+
+/* ✅ Responsive */
+@media (max-width: 576px) {
+  .login-form {
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn-custom {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}

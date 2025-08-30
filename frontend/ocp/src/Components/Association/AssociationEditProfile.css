@@ -1,0 +1,8 @@
+/* Forcer la taille du bouton de fermeture de Toastify */
+.form-container .Toastify__close-button {
+  width: 16px !important;
+  height: 16px !important;
+  font-size: 14px !important;
+  line-height: 16px !important;
+  padding: 0 !important;
+}

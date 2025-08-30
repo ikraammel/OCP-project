@@ -1,0 +1,209 @@
+/* Conteneur principal du formulaire */
+.form-container {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 30px 25px;
+  background-color: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Titre */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #4a4a4a;
+}
+
+/* Inputs, textarea, select */
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container textarea,
+.form-container select {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 18px;
+  border: 1.8px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+/* Focus state */
+.form-container input[type="text"]:focus,
+.form-container input[type="number"]:focus,
+.form-container textarea:focus,
+.form-container select:focus {
+  border-color: #7c4dff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(124, 77, 255, 0.3);
+}
+
+/* Bouton */
+.form-container button {
+  width: 100%;
+  padding: 14px;
+  background-color: #7c4dff;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+/* Bouton hover */
+.form-container button:hover {
+  background-color: #5b35cc;
+}
+
+/* Texte descriptif dans textarea */
+.form-container textarea {
+  min-height: 80px;
+}
+
+/* Liste produits dashboard */
+.dashboard ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.dashboard ul li {
+  padding: 8px 12px;
+  background-color: #eee;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* Container dashboard */
+.dashboard {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 30px 25px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0,0,0,0.05);
+  border-radius: 10px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* Titres dashboard */
+.dashboard h1 {
+  margin-bottom: 12px;
+  color: #6a2cff;
+}
+
+.dashboard h2 {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  color: #7c4dff;
+}
+
+/* Bouton ajout produit */
+.dashboard button {
+  margin-top: 15px;
+  background-color: #7c4dff;
+  border: none;
+  padding: 12px 20px;
+  color: white;
+  border-radius: 7px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard button:hover {
+  background-color: #5b35cc;
+}
+
+/* Séparateur */
+.dashboard hr {
+  margin: 30px 0;
+  border: 0.5px solid #ddd;
+}
+/* Style commun aux boutons du dashboard */
+.dashboard-btn {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px 20px;
+  margin-top: 15px;
+  margin-right: 10px; /* espace entre les boutons */
+  background-color: #7c4dff;
+  color: white;
+  font-weight: 600;
+  border-radius: 7px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.dashboard-btn:hover {
+  background-color: #5b35cc;
+  transform: translateY(-2px);
+}
+
+/* Optionnel : bouton spécifique "Modifier mon profil" */
+.edit-profile-btn {
+  box-shadow: 0 4px 8px rgba(124, 77, 255, 0.3);
+}
+/* Style général pour tous les boutons du dashboard */
+.dashboard-btn,
+.dashboard button {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px 20px;
+  margin-top: 15px;
+  margin-right: 10px; /* espace entre les boutons */
+  background-color: #7c4dff;
+  color: white;
+  font-weight: 600;
+  border-radius: 7px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  cursor: pointer;
+  border: none; /* pour le button */
+}
+
+.dashboard-btn:hover,
+.dashboard button:hover {
+  background-color: #5b35cc;
+  transform: translateY(-2px);
+}
+/* Image association */
+.dashboard img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Images produits */
+.product-item img {
+  width: 100%;
+  max-width: 120px; /* limite la largeur max */
+  height: auto;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Sur mobile, on agrandit un peu les images produits */
+@media (max-width: 600px) {
+  .product-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .product-item img {
+    max-width: 200px;
+    margin-bottom: 10px;
+  }
+}
+
