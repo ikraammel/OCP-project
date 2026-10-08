@@ -35,7 +35,3 @@ Install the dependencies for the relevant application components and configure a
 ## About this project
 
 Developed during my web development internship at **OCP (August 2025)**.
-
-## Author
-
-[Ikram El Houl](https://github.com/ikraammel)
