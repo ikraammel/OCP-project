@@ -1,10 +1,26 @@
-# OCP Project — E-Commerce Platform
+# OCP — Association E-Commerce Platform
 
-Full-stack e-commerce project with a Java Spring Boot backend and a web frontend. The backend includes controllers for products, categories, carts, orders, and users, as well as JWT authentication components.
+A secure full-stack e-commerce platform developed during a web development internship at OCP in August 2025. The platform supports the management and sale of products offered by OCP associations.
 
-## Repository overview
+## Key features
 
-This repository is part of my software engineering portfolio. It contains the implementation and supporting project files for **OCP Project — E-Commerce Platform**.
+- JWT-based authentication and authorization
+- Role-based access for administrators, associations, and employees
+- Product and category management
+- Association management
+- Shopping cart and order management
+
+## Technology stack
+
+- React.js
+- Java
+- Spring Boot
+- Spring Security
+- JWT
+
+## Repository structure
+
+Backend source: `backend/ecommerce/`; frontend source: `frontend/`.
 
 ## Getting started
 
@@ -14,19 +30,11 @@ Clone the repository:
 git clone https://github.com/ikraammel/OCP-project.git
 cd OCP-project
 ```
+Install the dependencies for the relevant application components and configure any required environment variables or external services according to the project source.
 
-### Run locally
+## About this project
 
-```bash
-cd backend/ecommerce
-./mvnw spring-boot:run
-```
-
-Install the required SDK and configure any backend services or environment variables used by the application before launching.
-
-## Project structure
-
-Browse the source folders in this repository to explore the implementation. For projects with separate frontend and backend components, configure and run each component independently.
+Developed during my web development internship at **OCP (August 2025)**.
 
 ## Author
 
